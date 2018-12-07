@@ -1,0 +1,445 @@
+EESchema Schematic File Version 4
+LIBS:Liquid Level Manager-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Liquid Level Manager"
+Date "2018-11-25"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Liquid-Level-Manager-rescue:LLC200D3SH-LLPK1-Joshs~Library U2
+U 1 1 5BFD9B23
+P 3650 4350
+F 0 "U2" H 3578 3972 50  0000 R CNN
+F 1 "Bottom Sensor" V 3350 4400 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 3650 4350 50  0001 C CNN
+F 3 "" H 3650 4350 50  0001 C CNN
+	1    3650 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5BFD9D0D
+P 6050 3550
+F 0 "D2" V 6088 3433 50  0000 R CNN
+F 1 "Filling" V 5997 3433 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6050 3550 50  0001 C CNN
+F 3 "~" H 6050 3550 50  0001 C CNN
+	1    6050 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Liquid-Level-Manager-rescue:LLC200D3SH-LLPK1-Joshs~Library U1
+U 1 1 5BFF10DC
+P 3650 3500
+F 0 "U1" H 3578 3122 50  0000 R CNN
+F 1 "Top Sensor" V 3350 3500 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 3650 3500 50  0001 C CNN
+F 3 "" H 3650 3500 50  0001 C CNN
+	1    3650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS02 U3
+U 1 1 5BFF00D4
+P 4750 3450
+F 0 "U3" H 4750 3775 50  0000 C CNN
+F 1 "74LS02" H 4750 3684 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4750 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4750 3450 50  0001 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U3
+U 2 1 5BFF07CF
+P 5500 3550
+F 0 "U3" H 5500 3875 50  0000 C CNN
+F 1 "74LS02" H 5500 3784 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5500 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 5500 3550 50  0001 C CNN
+	2    5500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U3
+U 3 1 5BFF082C
+P 5500 4300
+F 0 "U3" H 5500 4625 50  0000 C CNN
+F 1 "74LS02" H 5500 4534 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5500 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 5500 4300 50  0001 C CNN
+	3    5500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3350 4200 3350
+Wire Wire Line
+	4450 3550 4200 3550
+Wire Wire Line
+	4200 3550 4200 3350
+Connection ~ 4200 3350
+Wire Wire Line
+	4200 3350 4450 3350
+Wire Wire Line
+	5800 3550 5800 3800
+Wire Wire Line
+	5200 4200 5200 3950
+Wire Wire Line
+	5200 3950 5800 3800
+Wire Wire Line
+	5200 3650 5200 3850
+Wire Wire Line
+	5200 3850 5800 4000
+Wire Wire Line
+	5800 4000 5800 4300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C0C5164
+P 9100 3500
+F 0 "#FLG0101" H 9100 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 9100 3674 50  0000 C CNN
+F 2 "" H 9100 3500 50  0001 C CNN
+F 3 "~" H 9100 3500 50  0001 C CNN
+	1    9100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C0C683D
+P 9200 3900
+F 0 "#FLG0102" H 9200 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 9200 4074 50  0000 C CNN
+F 2 "" H 9200 3900 50  0001 C CNN
+F 3 "~" H 9200 3900 50  0001 C CNN
+	1    9200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 5C0C8772
+P 1350 1850
+F 0 "#PWR0101" H 1350 1700 50  0001 C CNN
+F 1 "+12V" V 1365 1978 50  0000 L CNN
+F 2 "" H 1350 1850 50  0001 C CNN
+F 3 "" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	0    -1   -1   0   
+$EndComp
+Text Notes 6200 4550 0    50   ~ 0
+! Make a new part for the solenoid controlled valve
+Text Notes 6200 4650 0    50   ~ 0
+! Add voltage regulator for 5V
+Text Notes 6200 4750 0    50   ~ 0
+! Add MOSFET to power solenoid
+Wire Wire Line
+	5050 3450 5200 3450
+NoConn ~ 5400 3900
+$Comp
+L Regulator_Linear:LM7805_TO220 U4
+U 1 1 5C0CAA6D
+P 1800 1850
+F 0 "U4" H 1800 2092 50  0000 C CNN
+F 1 "LM7805C" H 1800 2001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1800 2075 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 1800 1800 50  0001 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C0CB485
+P 1800 2600
+F 0 "#PWR0102" H 1800 2350 50  0001 C CNN
+F 1 "GND" H 1805 2427 50  0000 C CNN
+F 2 "" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C0CC32A
+P 3850 3300
+F 0 "#PWR0103" H 3850 3050 50  0001 C CNN
+F 1 "GND" H 3855 3127 50  0000 C CNN
+F 2 "" H 3850 3300 50  0001 C CNN
+F 3 "" H 3850 3300 50  0001 C CNN
+	1    3850 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C0CC349
+P 3850 4100
+F 0 "#PWR0104" H 3850 3850 50  0001 C CNN
+F 1 "GND" H 3855 3927 50  0000 C CNN
+F 2 "" H 3850 4100 50  0001 C CNN
+F 3 "" H 3850 4100 50  0001 C CNN
+	1    3850 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS02 U3
+U 5 1 5C0CF3C6
+P 5100 4850
+F 0 "U3" V 5467 4850 50  0000 C CNN
+F 1 "74LS02" V 5376 4850 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 5100 4850 50  0001 C CNN
+	5    5100 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 4850 4600 4850
+$Comp
+L power:GND #PWR0105
+U 1 1 5C0D3785
+P 5600 4850
+F 0 "#PWR0105" H 5600 4600 50  0001 C CNN
+F 1 "GND" H 5605 4677 50  0000 C CNN
+F 2 "" H 5600 4850 50  0001 C CNN
+F 3 "" H 5600 4850 50  0001 C CNN
+	1    5600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5C0D3AAB
+P 6450 3900
+F 0 "R1" H 6518 3946 50  0000 L CNN
+F 1 "270" H 6518 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6490 3890 50  0001 C CNN
+F 3 "~" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C0D3B3F
+P 6050 4300
+F 0 "D1" V 6088 4183 50  0000 R CNN
+F 1 "Good" V 5997 4183 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6050 4300 50  0001 C CNN
+F 3 "~" H 6050 4300 50  0001 C CNN
+	1    6050 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 3550 5800 3550
+Connection ~ 5800 3550
+Wire Wire Line
+	5900 4300 5800 4300
+Connection ~ 5800 4300
+Wire Wire Line
+	6200 3550 6300 3550
+Wire Wire Line
+	6300 3550 6300 3900
+Wire Wire Line
+	6300 3900 6300 4300
+Wire Wire Line
+	6300 4300 6200 4300
+Connection ~ 6300 3900
+$Comp
+L power:GND #PWR0106
+U 1 1 5C0D55E1
+P 6600 3900
+F 0 "#PWR0106" H 6600 3650 50  0001 C CNN
+F 1 "GND" V 6605 3772 50  0000 R CNN
+F 2 "" H 6600 3900 50  0001 C CNN
+F 3 "" H 6600 3900 50  0001 C CNN
+	1    6600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5C0D88A0
+P 9250 4600
+F 0 "J1" V 9123 4680 50  0000 L CNN
+F 1 "+12V" V 9214 4680 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 9250 4600 50  0001 C CNN
+F 3 "~" H 9250 4600 50  0001 C CNN
+	1    9250 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5C0D8CA3
+P 9350 3500
+F 0 "#PWR0107" H 9350 3350 50  0001 C CNN
+F 1 "+12V" H 9365 3628 50  0000 L CNN
+F 2 "" H 9350 3500 50  0001 C CNN
+F 3 "" H 9350 3500 50  0001 C CNN
+	1    9350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C0D934B
+P 9200 3900
+F 0 "#PWR0108" H 9200 3650 50  0001 C CNN
+F 1 "GND" H 9205 3727 50  0000 C CNN
+F 2 "" H 9200 3900 50  0001 C CNN
+F 3 "" H 9200 3900 50  0001 C CNN
+	1    9200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3500 9100 3600
+Wire Wire Line
+	9100 3600 9350 3600
+Wire Wire Line
+	9350 3600 9350 3500
+$Comp
+L power:+12V #PWR01
+U 1 1 5C0DA6FA
+P 9250 4400
+F 0 "#PWR01" H 9250 4250 50  0001 C CNN
+F 1 "+12V" H 9265 4528 50  0000 L CNN
+F 2 "" H 9250 4400 50  0001 C CNN
+F 3 "" H 9250 4400 50  0001 C CNN
+	1    9250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C0DA71B
+P 9150 4400
+F 0 "#PWR02" H 9150 4150 50  0001 C CNN
+F 1 "GND" H 9155 4227 50  0000 C CNN
+F 2 "" H 9150 4400 50  0001 C CNN
+F 3 "" H 9150 4400 50  0001 C CNN
+	1    9150 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRLB8721PBF Q1
+U 1 1 5C0DC035
+P 5700 1950
+F 0 "Q1" H 5905 1996 50  0000 L CNN
+F 1 "IRLB8721PBF" H 5905 1905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5950 1875 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 5700 1950 50  0001 L CNN
+	1    5700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D3
+U 1 1 5C0DCE8C
+P 5200 1950
+F 0 "D3" H 5200 2166 50  0000 C CNN
+F 1 "1N4001" H 5200 2075 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5200 1775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5200 1950 50  0001 C CNN
+	1    5200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5C0DDD9C
+P 1500 2300
+F 0 "C1" H 1615 2346 50  0000 L CNN
+F 1 "10uF" H 1615 2255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1500 2300 50  0001 C CNN
+F 3 "~" H 1500 2300 50  0001 C CNN
+	1    1500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 5C0DDE5E
+P 2100 2300
+F 0 "C2" H 2215 2346 50  0000 L CNN
+F 1 "10uF" H 2215 2255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2100 2300 50  0001 C CNN
+F 3 "~" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1850 1350 1850
+Wire Wire Line
+	1500 1850 1500 2150
+Connection ~ 1500 1850
+Wire Wire Line
+	2100 1850 2100 2150
+Wire Wire Line
+	1500 2450 1800 2450
+Wire Wire Line
+	1800 2150 1800 2450
+Connection ~ 1800 2450
+Wire Wire Line
+	1800 2450 2100 2450
+Wire Wire Line
+	1800 2450 1800 2600
+Wire Wire Line
+	3750 3350 3400 3350
+Wire Wire Line
+	3400 3350 3400 4200
+Connection ~ 3400 4200
+Wire Wire Line
+	3400 4200 3750 4200
+Wire Wire Line
+	3400 4850 3400 4200
+Wire Wire Line
+	3850 3300 3850 3350
+Wire Wire Line
+	3950 4200 4900 4200
+Wire Wire Line
+	4900 4200 4900 4400
+Wire Wire Line
+	4900 4400 5200 4400
+Wire Wire Line
+	3850 4100 3850 4200
+Text Label 5050 1950 1    50   ~ 0
+VALVE
+Text Label 6200 3550 0    50   ~ 0
+VALVE
+Text Label 2100 1850 0    50   ~ 0
+5V
+Text Label 3400 4200 0    50   ~ 0
+5V
+Wire Wire Line
+	5350 1950 5500 1950
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5C0F4275
+P 6650 1900
+F 0 "J2" H 6730 1892 50  0000 L CNN
+F 1 "Valve" H 6730 1801 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 6650 1900 50  0001 C CNN
+F 3 "~" H 6650 1900 50  0001 C CNN
+	1    6650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C0FB040
+P 5800 2300
+F 0 "#PWR?" H 5800 2050 50  0001 C CNN
+F 1 "GND" H 5805 2127 50  0000 C CNN
+F 2 "" H 5800 2300 50  0001 C CNN
+F 3 "" H 5800 2300 50  0001 C CNN
+	1    5800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C0FB06B
+P 5800 1600
+F 0 "#PWR?" H 5800 1450 50  0001 C CNN
+F 1 "+12V" H 5815 1728 50  0000 L CNN
+F 2 "" H 5800 1600 50  0001 C CNN
+F 3 "" H 5800 1600 50  0001 C CNN
+	1    5800 1600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

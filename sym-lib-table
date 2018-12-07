@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Liquid-Level-Manager-rescue)(type Legacy)(uri "${KIPRJMOD}/Liquid Level Manager-rescue.lib")(options "")(descr ""))
+)
