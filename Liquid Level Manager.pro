@@ -1,4 +1,4 @@
-update=12/7/2018 6:57:56 PM
+update=12/9/2018 11:16:15 AM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/jgall/Downloads/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
