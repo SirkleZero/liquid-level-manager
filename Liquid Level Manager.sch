@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Liquid Level Manager-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -465,10 +466,37 @@ Wire Wire Line
 	4150 3250 4050 3250
 Wire Wire Line
 	4150 4100 4050 4100
-Text Label 4850 4900 1    50   ~ 0
+Text Label 4450 4900 1    50   ~ 0
 5V
 Wire Wire Line
 	7500 3450 6700 3450
 Connection ~ 7500 3450
 Connection ~ 6700 3450
+$Comp
+L Device:C_Small C3
+U 1 1 5C13CB3C
+P 4550 4900
+F 0 "C3" V 4321 4900 50  0000 C CNN
+F 1 "C_Small" V 4412 4900 50  0000 C CNN
+F 2 "" H 4550 4900 50  0001 C CNN
+F 3 "~" H 4550 4900 50  0001 C CNN
+	1    4550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5C13EB88
+P 4850 4700
+F 0 "#FLG0103" H 4850 4775 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 4874 50  0000 C CNN
+F 2 "" H 4850 4700 50  0001 C CNN
+F 3 "" H 4850 4700 50  0001 C CNN
+	1    4850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4900 4650 4900
+Wire Wire Line
+	4850 4700 4850 4900
+Connection ~ 4850 4900
 $EndSCHEMATC
