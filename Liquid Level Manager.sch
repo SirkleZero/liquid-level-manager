@@ -184,7 +184,7 @@ U 1 1 5C0D3AAB
 P 6850 3800
 F 0 "R1" H 6918 3846 50  0000 L CNN
 F 1 "270" H 6918 3755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6890 3790 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6890 3790 50  0001 C CNN
 F 3 "" H 6850 3800 50  0001 C CNN
 	1    6850 3800
 	0    1    1    0   
@@ -232,7 +232,7 @@ U 1 1 5C0D88A0
 P 2050 7400
 F 0 "J1" V 1923 7480 50  0000 L CNN
 F 1 "+12V" V 2014 7480 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 2050 7400 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 2050 7400 50  0001 C CNN
 F 3 "" H 2050 7400 50  0001 C CNN
 	1    2050 7400
 	0    1    1    0   
@@ -365,7 +365,7 @@ U 1 1 5C0F4275
 P 8500 2950
 F 0 "J2" H 8580 2942 50  0000 L CNN
 F 1 "Valve" H 8580 2851 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 8500 2950 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 8500 2950 50  0001 C CNN
 F 3 "" H 8500 2950 50  0001 C CNN
 	1    8500 2950
 	1    0    0    -1  
@@ -398,7 +398,7 @@ U 1 1 5C0B2B08
 P 4050 3400
 F 0 "U1" V 4032 3022 50  0000 R CNN
 F 1 "High Sensor" V 3941 3022 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 4050 3400 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal" H 4050 3400 50  0001 C CNN
 F 3 "" H 4050 3400 50  0001 C CNN
 	1    4050 3400
 	0    -1   -1   0   
@@ -409,7 +409,7 @@ U 1 1 5C0B3C6C
 P 4050 4250
 F 0 "U2" V 4032 3872 50  0000 R CNN
 F 1 "Low Sensor" V 3941 3872 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 4050 4250 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x03_P3.50mm_Horizontal" H 4050 4250 50  0001 C CNN
 F 3 "" H 4050 4250 50  0001 C CNN
 	1    4050 4250
 	0    -1   -1   0   
@@ -422,7 +422,7 @@ U 1 1 5C0B9A31
 P 7650 3700
 F 0 "R2" H 7718 3746 50  0000 L CNN
 F 1 "10k" H 7718 3655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7690 3690 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7690 3690 50  0001 C CNN
 F 3 "" H 7650 3700 50  0001 C CNN
 	1    7650 3700
 	0    1    1    0   
@@ -477,8 +477,8 @@ L Device:C_Small C3
 U 1 1 5C13CB3C
 P 4550 4900
 F 0 "C3" V 4321 4900 50  0000 C CNN
-F 1 "C_Small" V 4412 4900 50  0000 C CNN
-F 2 "" H 4550 4900 50  0001 C CNN
+F 1 ".1uF" V 4412 4900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4550 4900 50  0001 C CNN
 F 3 "~" H 4550 4900 50  0001 C CNN
 	1    4550 4900
 	0    1    1    0   
