@@ -35,6 +35,7 @@
 
   (setup
     (last_trace_width 0.254)
+    (user_trace_width 2.032863)
     (trace_clearance 0.254)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -596,7 +597,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5C17CB0B)
-    (at 152.146 87.63 90)
+    (at 154.178 87.63 90)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5BFF00D4)
