@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 20)
+    (drawings 21)
     (tracks 81)
     (zones 0)
     (modules 19)
@@ -1227,6 +1227,9 @@
     )
   )
 
+  (gr_text SN74LS02N (at 161.798 83.82) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text +12V (at 131.572 111.252) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
