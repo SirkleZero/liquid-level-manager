@@ -209,12 +209,12 @@ $EndComp
 $Comp
 L Diode:1N4001 D3
 U 1 1 5C0DCE8C
-P 7800 4250
-F 0 "D3" H 7800 4466 50  0000 C CNN
-F 1 "1N4001" H 7800 4375 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7800 4075 50  0001 C CNN
-F 3 "" H 7800 4250 50  0001 C CNN
-	1    7800 4250
+P 7600 4250
+F 0 "D3" H 7600 4350 50  0000 C CNN
+F 1 "1N4001" H 7600 4150 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7600 4075 50  0001 C CNN
+F 3 "" H 7600 4250 50  0001 C CNN
+	1    7600 4250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -321,24 +321,6 @@ Wire Wire Line
 	7300 4700 7400 4700
 Wire Wire Line
 	4350 4750 4550 4700
-Wire Wire Line
-	7800 4000 7800 4050
-Wire Wire Line
-	7800 4400 7800 4450
-Wire Wire Line
-	8200 4200 8200 4050
-Wire Wire Line
-	8200 4050 7800 4050
-Connection ~ 7800 4050
-Wire Wire Line
-	7800 4050 7800 4100
-Wire Wire Line
-	8200 4300 8200 4450
-Wire Wire Line
-	8200 4450 7800 4450
-Connection ~ 7800 4450
-Wire Wire Line
-	7800 4450 7800 4500
 $Comp
 L Device:C_Small C3
 U 1 1 5C13CB3C
@@ -539,26 +521,15 @@ Text Notes 5850 1650 0    50   ~ 0
 Wire Wire Line
 	4550 4700 4950 4600
 Wire Notes Line
-	6700 3800 8750 3800
+	6700 3800 8500 3800
 Wire Notes Line
-	8750 3800 8750 5250
+	8500 3800 8500 5250
 Wire Notes Line
-	8750 5250 6700 5250
+	8500 5250 6700 5250
 Wire Notes Line
 	6700 5250 6700 3800
 Text Notes 6700 3800 0    50   ~ 0
 Valve Control
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5C1C8F26
-P 8400 4300
-F 0 "J1" H 8372 4180 50  0000 R CNN
-F 1 "Valve" H 8372 4271 50  0000 R CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 8400 4300 50  0001 C CNN
-F 3 "~" H 8400 4300 50  0001 C CNN
-	1    8400 4300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4350 4650 4950 4800
 Wire Wire Line
@@ -567,4 +538,25 @@ Wire Wire Line
 	3950 4900 3950 5000
 Wire Wire Line
 	3100 3850 3100 3950
+$Comp
+L Device:L L1
+U 1 1 5C1F1067
+P 7800 4250
+F 0 "L1" H 7759 4204 50  0000 R CNN
+F 1 "Valve" H 7759 4295 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 7800 4250 50  0001 C CNN
+F 3 "~" H 7800 4250 50  0001 C CNN
+	1    7800 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 4000 7800 4100
+Wire Wire Line
+	7800 4400 7800 4500
+Wire Wire Line
+	7600 4400 7800 4400
+Wire Wire Line
+	7600 4100 7800 4100
+Connection ~ 7800 4400
+Connection ~ 7800 4100
 $EndSCHEMATC
